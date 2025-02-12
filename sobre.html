@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>joão Roncon</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+</head>
+
+<body id="body-sobre">
+    <!--NAV-->
+    <nav id="mobile-nav">
+        <button onclick="toggleMenuMobile()" class="close-btn-menu-mobile">
+            Fechar
+        </button>
+        <a class="menu-link" href="index.html">Home</a>
+        <a class="menu-link" href="sobre.html">Sobre</a>
+        <a class="menu-link" href="eventos.html">Eventos</a>
+        <a class="menu-link" href="galeria.html">Galeria</a>
+        <a class="menu-link" href="inscrever.html">Entrar</a>
+        <a class="menu-link" target="_blank" href="https://www.facebook.com/groups/259364957493051/about">
+            Facebook
+        </a>
+        <a class="menu-link" target="_blank" href="https://www.instagram.com/joaoroncon_jram?igsh=NHAybWY4NjJnbmdl">
+            Instagram
+        </a>
+        <a class="menu-link" target="_blank" href="https://wa.me/+5511991596600/?text=urlencodedtex">
+            WhatsApp
+        </a>
+    </nav>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo João Roncon">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" aria-label="Voltar para a página inicial">HOME</a></li>
+            <li><a href="sobre.html" aria-label="Saiba mais sobre nossa história">SOBRE</a></li>
+            <li><a href="eventos.html" aria-label="Confira nossos próximos eventos">EVENTOS</a></li>
+            <li><a href="galeria.html" aria-label="Veja nossa galeria de fotos">GALERIA</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <div class="contato-container">
+                <a href="#" class="contato" aria-label="Entre em contato conosco">CONTATO</a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/groups/259364957493051/about"
+                        aria-label="Link para o nosso facebook" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="20" width="20"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com/joaoroncon_jram?igsh=NHAybWY4NjJnbmdl"
+                        aria-label="Link para o nosso instagram" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="https://wa.me/+5511991596600/?text=urlencodedtex" aria-label="Link para o nosso whatsapp"
+                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg></a>
+                </div>
+            </div>
+            <a href="inscrever.html" aria-label="inscrever-se" class="button inscrever-se">Entrar</a>
+        </div>
+
+        <button onclick="toggleMenuMobile()" class="menu-hamburguer">
+            <svg xmlns="http://www.w3.org/2000/svg" aria-label="Menu" width="24" height="24" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-menu">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+        </button>
+
+        <script>
+            const contatoContainer = document.querySelector('.contato-container');
+            const contatoButton = contatoContainer.querySelector('.contato');
+            const socialLinks = contatoContainer.querySelector('.social-links');
+
+            contatoButton.addEventListener('mouseenter', () => {
+                contatoButton.style.display = 'none'; // Esconde o botão
+                socialLinks.style.display = 'flex'
+            });
+
+            contatoContainer.addEventListener('mouseleave', () => {
+                contatoButton.style.display = 'inline-block'; // Mostra o botão novamente
+                socialLinks.style.display = 'none'
+            });
+
+            socialLinks.addEventListener('mouseleave', () => {
+                contatoButton.style.display = 'inline-block'; // Mostra o botão novamente
+                socialLinks.style.display = 'none'
+            });
+        </script>
+    </nav>
+
+    <div id="banner"
+        style="background-image: url('images/DESPERTE O DANÇARINO (1).png'); background-size: cover; background-position: center; position: relative;"
+        role="banner" aria-label="Foto de pessoas dançando, expressando liberdade e energia através da dança">
+
+        <div class="textos-wrapper">
+            <div class="titulosb titulosb-sobre">
+                <h1>NOSSA HISTÓRIA EM MOVIMENTO: <span>DA PAIXÃO AO PALCO!</span></h1>
+            </div>
+
+            <div class="subtitulo-wrapper">
+                <p class="subtitulo-sobre">
+                    Conheça a jornada vibrante do nosso grupo desde as ruas até os palcos.
+                    Cada batida,cada movimento,cada conquista moldou nossa história.
+                    Venha descobrir como transformamos paixão em arte e superação em espetáculos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="linha-colorida"><!--LINHA-->
+    <main id="main-sobre">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h1 class="titulo9">DESCUBRA COMO <span>TUDO COMEÇOU!</span></h1>
+                <p
+                    alt="O projeto de dança da escola, que existe desde sua fundação em setembro de 2000, mudou a vida de seus participantes. O projeto foi concebido para promover experiências compartilhadas e cooperação entre os alunos ao mesmo tempo em que utiliza de maneira produtiva o tempo livre deles. Com reprisagem de pouco mais de vinte alunos, o grupo se tornou rapidamente na unidade mais popular da escola. No início, os alunos exploraram movimentos básicos de danças urbanas inovadoras, mas hoje têm a chance de aproveitar um curso amplo que inclui consciência corporal e até teatro. O ritmo os rapazes e as moças não apenas poliram silenciosamente seus talentos artísticos, mas também trabalharam para melhorar seu desempenho acadêmico. A dança comprovou sua eficiência como ferramenta de instrução em nosso caso.">
+                    O projeto de dança da escola, que existe desde sua fundação em setembro de 2000, mudou a vida de
+                    seus participantes. O projeto foi concebido para promover experiências compartilhadas e cooperação
+                    entre os alunos ao mesmo tempo em que utiliza de maneira produtiva o tempo livre deles. Com
+                    reprisagem de pouco mais de vinte alunos, o grupo se tornou rapidamente na unidade mais popular da
+                    escola. No início, os alunos exploraram movimentos básicos de danças urbanas inovadoras, mas hoje
+                    têm a chance de aproveitar um curso amplo que inclui consciência corporal e até teatro. O ritmo os
+                    rapazes e as moças não apenas poliram silenciosamente seus talentos artísticos, mas também
+                    trabalharam para melhorar seu desempenho acadêmico. A dança comprovou sua eficiência como ferramenta
+                    de instrução em nosso caso.</p>
+            </div>
+
+            <div class="gallery">
+                <img src="images/diferente.jpg" alt="Foto de um grupo de dança vestidas de vermelho">
+                <img src="images/tentativa.jfif" alt="Foto do gupo de dança se apresentado, dançando hip hop">
+                <img src="images/pessoas.jpg" alt="Foto de um grupo de dança em frente local,onde ocorreu a dança">
+                <img src="images/dancavermelho.jpg" alt="Foto do gupo de dança se apresentado">
+            </div>
+        </div>
+
+        <div class="container-2">
+            <div class="img_cont2">
+                <img src="images/eipsiue.png" alt="Foto do grupo de dança no Festidança - 2008" class="small-image">
+            </div>
+
+            <div class="text-sobre-2">
+                <p>O projeto de danças não é apenas uma prática artística; é um agente de mudanças sociais e
+                    educacionais. Além do benefício proporcionado pelas aulas de danças, a participação dos alunos exige
+                    que eles frequentem a aula e se dediquem a um desempenho escolar satisfatório. As aulas de ensaio
+                    regular ensinam-nos que respeito, ética e a nossa pluralidade cultural, para além de também
+                    desenvolver uma consciência corporal mais significativa. Os monitores que executam as aulas são
+                    voluntários e promovem um ambiente colaborativo, porque os colegiais mais velhos são ativistas que
+                    ajudam a explicar e a guir colegiados mais jovens que possam ter dificuldades. Portanto, este
+                    projeto tem muitos outros benefícios além de melhorar a habilidade de danças e promover a aptidão
+                    dos alunos; ele também integra o aluno numa comunidade escolar.</p>
+            </div>
+        </div>
+
+        <div class="container-3">
+            <div class="text-sobre-3">
+                <p
+                    alt="Com 20 anos de história de sucesso, o projeto de dança se tornou uma parte vital da educação e cultura em Ribeirão Pires. Ao longo dos anos, os alunos participaram de festivais de dança de renome e ganharam mais de 70 prêmios, incluindo vários primeiros lugares em competições nacionais. Os números falam por si só, mas o projeto também foi capaz de influenciar a vida e os destinos de muitos jovens que vêm aqui não só para aprender, mas para ser inspirados e acreditar em si mesmos e em seu talento. Como os profissionais da dança e a comunidade escolar dão um feedback positivo sobre o projeto, não aparecem dúvidas de que é necessário para moldar pessoalmente os futuros artistas e cidadãos responsáveis. Em última análise, a dança é uma maneira de expressão, desenvolvimento pessoal e construção de uma comunidade mais pacífica e respeitosa.">
+                    Com 20 anos de história de sucesso, o projeto de dança se tornou uma parte vital da educação e
+                    cultura em Ribeirão Pires. Ao longo dos anos, os alunos participaram de festivais de dança de renome
+                    e ganharam mais de 70 prêmios, incluindo vários primeiros lugares em competições nacionais. Os
+                    números falam por si só, mas o projeto também foi capaz de influenciar a vida e os destinos de
+                    muitos jovens que vêm aqui não só para aprender, mas para ser inspirados e acreditar em si mesmos e
+                    em seu talento. Como os profissionais da dança e a comunidade escolar dão um feedback positivo sobre
+                    o projeto, não aparecem dúvidas de que é necessário para moldar pessoalmente os futuros artistas e
+                    cidadãos responsáveis. Em última análise, a dança é uma maneira de expressão, desenvolvimento
+                    pessoal e construção de uma comunidade mais pacífica e respeitosa.
+                </p>
+            </div>
+
+            <div class="img_cont3">
+                <img src="images/icon_musica.png" alt="desenho de um radio antigo, com notas musicais em volta"
+                    class="small-image-2">
+            </div>
+
+            <div class="container-2">
+                <div class="img_cont2-v">
+                    <video autoplay loop muted width="640" height="360" controls>
+                        <source src="images/videodança.mp4" alt="Video de um grupo de dança,durante a apresentação"
+                            class="video">
+                </div>
+
+                <div class="text-sobre-2">
+                    <p
+                        alt="Em 2023, o projeto João Roncon Arte em Movimento apresentou uma parceria significativa com a escola de dança Galp4o, sob a direção do idealizador Marcello Lopes. Graças a essa colaboração, o projeto passou a oferecer aulas de hip hop no Clube Ribeirão Pires, criando um ambiente onde alunos de diferentes idades e níveis de experiência podem explorar e desenvolver suas habilidades na dança. Essa aliança com o Galp4o reforça o compromisso do projeto em oferecer uma experiência de aprendizado enriquecedora, com aulas ministradas por profissionais que têm a paixão pela dança e o desejo de impactar vidas. As atividades visam não apenas aprimorar a técnica e a expressão corporal dos alunos, mas também promover a inclusão, fortalecer os laços comunitários e inspirar cada participante a descobrir e potencializar suas habilidades artísticas.">
+                        Em 2023, o projeto João Roncon Arte em Movimento apresentou uma parceria significativa com a
+                        escola de dança Galp4o, sob a direção do idealizador Marcello Lopes. Graças a essa colaboração,
+                        o projeto passou a oferecer aulas de hip hop no Clube Ribeirão Pires, criando um ambiente onde
+                        alunos de diferentes idades e níveis de experiência podem explorar e desenvolver suas
+                        habilidades na dança. Essa aliança com o Galp4o reforça o compromisso do projeto em oferecer uma
+                        experiência de aprendizado enriquecedora, com aulas ministradas por profissionais que têm a
+                        paixão pela dança e o desejo de impactar vidas. As atividades visam não apenas aprimorar a
+                        técnica e a expressão corporal dos alunos, mas também promover a inclusão, fortalecer os laços
+                        comunitários e inspirar cada participante a descobrir e potencializar suas habilidades
+                        artísticas.</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!--footer-->
+
+    <hr class="linha-colorida-2">
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo João Roncon">
+            <div>
+                <h3 aria-label="João Roncon Arte em Movimento">João Roncon Arte em Movimento</h3>
+
+                <p
+                    alt="Conecte-se com a arte em movimento! Nos siga nas redes sociais e acompanhe de perto nossas coreografias, bastidores e novidades. Não perca nenhum passo, junte-se à nossa comunidade e inspire-se!">
+                    Conecte-se com a arte em movimento! Nos siga nas redes sociais e acompanhe de perto nossas
+                    coreografias, bastidores e novidades. Não perca nenhum passo, junte-se à nossa comunidade e
+                    inspire-se! </p>
+
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/joaoroncon_jram?igsh=NHAybWY4NjJnbmdl" target="_blank"
+                        aria-label="Link para o nosso instagram"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                            width="30"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></a>
+                    <a href="https://www.facebook.com/groups/259364957493051/about" target="_blank"
+                        aria-label="Link para o nosso facebook"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                            width="30"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                        </svg></a>
+                    <a href="https://wa.me/+5511991596600/?text=urlencodedtex" target="_blank"
+                        aria-label="Link para o nosso whatsapp"><svg xmlns="http://www.w3.org/2000/svg" height="30"
+                            width="30"
+                            viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="#ffffff"
+                                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div>
+                <h3 aria-label="Páginas">Páginas</h3>
+                <ul>
+                    <li><a href="index.html" aria-label="Voltar para a página inicial">HOME</a></li>
+                    <li><a href="sobre.html" aria-label="Saiba mais sobre nossa história">SOBRE</a></li>
+                    <li><a href="eventos.html" aria-label="Confira nossos próximos eventos">EVENTOS</a></li>
+                    <li><a href="galeria.html" aria-label="Veja nossa galeria de fotos">GALERIA</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script>
+        function changeColorScheme(scheme) {
+            const body = document.body;
+
+            // Remove todas as classes de cor
+            body.classList.remove('normal', 'protanopia', 'deuteranopia', 'tritanopia');
+
+            // Adiciona a classe correspondente ao esquema escolhido
+            body.classList.add(scheme);
+        }
+    </script>
+
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="./menu.js" />
+
+</body>
+
+</html>
