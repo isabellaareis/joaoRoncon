@@ -30,7 +30,6 @@
                 <div class="card2"></div>
                 <div class="card3"></div>
                 <div class="card4"></div>
-                <div class="card5"></div>
         </div>
     </main>
       

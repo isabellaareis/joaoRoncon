@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Impede rolagem horizontal */
+html, body {
+    height: 100%;
+    font-family: inter, sans-serif;
+    background-color: black;
+    color: #eee;
+    margin: 0;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    z-index: 10;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 50px;
+    backdrop-filter: blur(8px);
+}
+
+.logo img {
+    align-items: center;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-links {
+   margin-right: 600px;
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff94;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: #ff00ff;
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: calc(100% + 10px); /* Aumenta a largura do traço em 10 pixels */
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute; /* Altera a posição para absoluta */
+    left: 50%; /* Move para o meio do link */
+    transform: translateX(-50%); /* Centraliza em relação ao próprio elemento */
+    margin-top: 5px; /* Espaço acima do traço */
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s; /* Adiciona transição para a largura */
+}
+
+.nav-links li a:hover::after {
+    opacity: 1; /* Mostra o traço ao passar o mouse */
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: space-between; /* Espaça os botões */
+  margin: 20px 0; /* Espaçamento vertical */
+  gap: 70px;
+}
+
+.nav-buttons .inscrever-se {
+    background: linear-gradient(to right, #AD0AB0, #5E0560);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: box-shadow 0.3s, background-color 0.3s;
+    text-align: center;
+    width:60px ;
+    height: 60px;
+}
+
+.nav-buttons .inscrever-se:hover {
+    background: linear-gradient(to right, #D400D4, #7B0575);
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+main {
+    margin-top: 170px;
+}
+
+/*main*/
+
+.container {
+    margin-top: 200px;
+   margin-left: 130px;
+}
+
+.card1 {
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+}
+
+.card2 {
+    margin-top: -300px;
+    margin-left: 450px;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+}
+
+.card3 {
+    margin-top: -300px;
+    margin-left: 900px;
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    background-color: #1A1A1A;
+}
+
+.card4 {
+    margin-top: 50px;
+    height: 300px;
+    background-color: #1A1A1A;
+    width: 1300px;
+    border-radius: 20px;
+}
+
+.card5 {
+    margin-top: 50px;
+    height: 300px;
+    background-color: #1A1A1A;
+    width: 1300px;
+    border-radius: 20px;
+}
+
+/*footer*/
+
+.linha-colorida-2{
+    margin-top: 100px;
+    border: none; /* Remove a borda padrão */
+    height: 4px; /* Altura da linha */
+    background-color: rgb(131, 7, 134); /* Cor da linha */
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 24px;
+}
+
+.footer-content-wrapper {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ddd;
+}
+
+.footer-desenvolvido-por {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-desenvolvido-por ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-left: 24px;
+    list-style: none;
+}
+
+.footer-desenvolvido-por ul li a {
+    color: #DDDDDD;
+    text-decoration: none;
+}
+
+.footer-desenvolvido-por ul li a:hover {
+    color: rgba(201, 28, 199, 0.8);
+}
+
+
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 130px;
+  }
+  
+  .footer-logo h3 {
+
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  .footer-logo p {
+    font-size: 14px;
+    text-align: justify;
+    max-width: 400px;
+    margin-top: 30px;
+
+  }
+  
+  .footer-content {
+    text-align: center;
+  }
+  
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+    position: relative; /* Necessário para o efeito de levantamento */
+    transition: transform 0.3s ease; /* Suaviza a transição de transformação */
+}
+
+.social-icons a img {
+    border-radius: 50%;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+/* Animação de levantamento ao passar o mouse */
+.social-icons a:hover {
+    transform: translateY(-10px); /* Move o ícone para cima ao passar o mouse */
+}
+
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .footer-links h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-right: 190px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .footer-links a:hover {
+    color: rgba(201, 28, 199, 0.8);
+  }
+
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    color: #888;
+  }
+
+  .footer-bottom a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  .footer-bottom a:hover {
+    color: rgba(201, 28, 199, 0.8)s;
+  }
