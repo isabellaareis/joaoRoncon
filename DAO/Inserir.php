@@ -59,5 +59,64 @@
                 return "<br>Algo deu errado".$erro;
             }
         } //fim do metodo 
+
+        function cadastrarTurma(Conexao $conexao,string $nome)
+        {
+            try{
+                $conn = $conexao->conectar();
+                $sql = "Insert into turma(id,nome) values('','$nome')";
+                $result = mysqli_query($conn,$sql);
+                mysqli_close($conn);
+                if($result){
+                    return "<br><br>Inserido com sucesso!";
+                }
+                return "<br><br>Não Inserido!";
+            }
+            catch(Except $erro)
+            {
+                return "<br>Algo deu errado".$erro;
+            }
+        } //fim do metodo
+        
+        function cadastrarAviso(Conexao $conexao,string $titulo,string $descricao, string $dt
+        ){
+            try{
+                $conn = $conexao->conectar();//Abrir banco
+                $sql = "Insert into Aviso(titulo,descricao,dt) values('$titulo','$descricao','$dt')";
+                $result = mysqli_query($conn,$sql);
+                mysqli_close($conn);
+                //Verificar o resultado
+                if($result){
+                    return "<br><br>Inserido com sucesso!";
+                }
+                return "<br><br>Não inserido!";
+            }
+            catch(Except $erro)
+            {
+                return "<br><br>Algo deu errado".$erro;
+            }
+        }//fim do método
+
+        function cadastrarAtestado(Conexao $conexao, string $nome, string $email, string $linkDrive)
+        {
+            try{
+                $conn = $conexao->conectar();//Abrir banco
+                $sql = "Insert into Atestado(nome,email,linkDrive) values('$nome','$email','$linkDrive')";
+                $result = mysqli_query($conn,$sql);
+                mysqli_close($conn);
+                //Verificar o resultado
+                if($result){
+                    return "<br><br>Inserido com sucesso!";
+                }
+                return "<br><br>Não inserido!";
+            }
+            catch(Except $erro)
+            {
+                return "<br><br>Algo deu errado".$erro;
+            }
+        }//fim do método
+
+
+
     }// fim da classe
 ?>

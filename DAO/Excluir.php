@@ -44,6 +44,35 @@
             }
         }
        
+        function excluirTurma(Conexao $conexao, string $nome){
+            $conn = $conexao->conectar();
+            $sql = "delete from turma where Nome = '$nome'";
+            $result = mysqli_query($conn,$sql);
+            mysqli_close($conn);
+
+            if($result){
+                echo "Deletado com sucesso!";
+            }else{
+                echo "Não deletado!";
+            }
+        }
+
+        function excluirAviso(Conexao $conexao,
+        string $titulo,
+        ){
+            $conn = $conexao->conectar();
+            $sql = "delete from Aviso where titulo = '$titulo' ";
+            $result = mysqli_query($conn,$sql);
+            mysqli_close($conn);
+
+            if($result){
+                echo "Deletado com sucesso!";
+            }else{
+                echo "Não deletado!";
+            }
+        }
+       
+        
 
     }//fim da classe 
 ?> 

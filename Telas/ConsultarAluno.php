@@ -16,7 +16,7 @@
     <title>Consultar Aluno</title>
     </head>
     <body>
-    <a href="Menu.php"> <button>Voltar</button></a> 
+    <a href="MenuAdministrador.php"> <button>Voltar</button></a> 
     <form method="POST">
     <form method="POST">
     <label>Informe um CPF: </label>

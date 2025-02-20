@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/back.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
 
@@ -26,11 +28,62 @@
 
     <main>
         <div class="container">
-                <div class="card1"></div>
-                <div class="card2"></div>
-                <div class="card3"></div>
-                <div class="card4"></div>
-                <div class="card5"></div>
+            <div class="card1">
+                <h2 class="title-1">Consultar Aluno</h2>
+                <p class="p1">Precisa verificar os dados de um aluno? Consulte agora o perfil completo e as informações relevantes.</p>
+                <a href="ConsultarAluno.php">
+                    <button class="btn1">
+                        <div class="circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                        </div>
+                    </button>
+                </a>
+            </div>
+
+            <div class="card2">
+                <h2 class="title-1">Liberar Acesso</h2>
+                    <p class="p1">Garanta que seus alunos tenham acesso às aulas e materiais necessários. Libere o acesso dos alunos de forma rápida e simples.</p>
+                    <a href="">
+                        <button class="btn1">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                            </div>
+                        </button>
+                    </a>
+            </div>
+            <div class="card3">
+                <h2 class="title-1">Excluir Aluno</h2>
+                    <p class="p1">Precisa remover um aluno da plataforma? Exclua o aluno rapidamente e mantenha sua gestão sempre atualizada.</p>
+                    <a href="ExcluirAluno.php">
+                        <button class="btn1">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                            </div>
+                        </button>
+                    </a>
+            </div>
+            <div class="card4">
+                <h2 class="title-1">Atualizar Aluno</h2>
+                        <p class="p2">Garanta que as informações dos alunos estejam sempre corretas e atualizadas. Mantenha um controle eficiente, evitando inconsistências e garantindo uma gestão escolar mais organizada. Atualize agora os dados do aluno e contribua para um sistema mais preciso e confiável.</p>
+                        <a href="AtualizarAluno.php">
+                            <button class="btn2">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </div>
+                            </button>
+                        </a>
+            </div>
+            <div class="card5">
+                <h2 class="title-1">Consultar Turma</h2>
+                            <p class="p2">Precisa conferir todos os detalhes de uma sala? Consulte agora as informações completas sobre sua estrutura, capacidade e disponibilidade. Planeje com mais eficiência e otimize sua programação garantindo o melhor uso dos espaços.</p>
+                            <a href="">
+                                <button class="btn2">
+                                    <div class="circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                    </div>
+                                </button>
+                            </a>
+            </div>
         </div>
     </main>
       
@@ -41,7 +94,7 @@
     <footer id="footer">
         <div class="footer-content-wrapper">
             <div class="footer-logo">
-                <img src="images/logo.png" alt="Logo João Roncon">
+                <img src="../images/logo.png" alt="Logo João Roncon">
                 <div>
                     <h3 aria-label="João Roncon Arte em Movimento">João Roncon Arte em Movimento</h3>
 
@@ -80,10 +133,10 @@
                 <div>
                     <h3 aria-label="Páginas">Páginas</h3>
                     <ul>
-                        <li><a href="index.html" aria-label="Voltar para a página inicial">HOME</a></li>
-                        <li><a href="sobre.html" aria-label="Saiba mais sobre nossa história">SOBRE</a></li>
-                        <li><a href="eventos.html" aria-label="Confira nossos próximos eventos">EVENTOS</a></li>
-                        <li><a href="galeria.html" aria-label="Veja nossa galeria de fotos">GALERIA</a></li>
+                        <li><a href="MenuAdministrador.php" aria-label="Voltar para a página inicial">ALUNO</a></li>
+                        <li><a href="MenuAdministradorProfessor.php" aria-label="Saiba mais sobre nossa história">PROFESSOR</a></li>
+                        <li><a href="MenuAdministradorAdm.php" aria-label="Confira nossos próximos eventos">ADMINISTRADOR</a></li>
+                       
                     </ul>
                 </div>
             </div>
@@ -111,6 +164,7 @@
             </ul>
         </div>
     </footer>
+   
    
 
 </body>

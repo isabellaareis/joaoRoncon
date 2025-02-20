@@ -4,15 +4,15 @@ require_once('Conexao.php');
 use PHP\JoaoRoncon\DAO\Conexao;
  
 class Login {
-    public function loginAluno(Conexao $conexao, int $id, string $senha) {
+    public function loginAluno(Conexao $conexao, string $email, string $senha) {
         try {
             $conn = $conexao->conectar(); 
-            $sql  = "select id, tipo, senha from aluno where id = '$id' and senha = '$senha'";
+            $sql  = "select email,senha from aluno where email = '$email' and senha = '$senha'";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
-                if($dados['id'] == $id && $dados['tipo'] == 1 && $dados['senha'] == $senha){
-                    header('Location: ..\Telas\MenuFuncionario.php');
+                if($dados['email'] == $email && $dados['senha'] == $senha){
+                    header('Location: ..\Telas\MenuAluno.php');
                 }
             }
             return false;
@@ -23,15 +23,15 @@ class Login {
         }
     }
 
-    public function loginProfessor(Conexao $conexao, int $id, string $senha) {
+    public function loginProfessor(Conexao $conexao,  string $email, string $senha) {
         try {
             $conn = $conexao->conectar(); 
-            $sql  = "select id, tipo, senha from Professor where id = '$id' and senha = '$senha'";
+            $sql  = "select email,senha from professor where email = '$email' and senha = '$senha'";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
-                if($dados['id'] == $id && $dados['tipo'] == 1 && $dados['senha'] == $senha){
-                    header('Location: ..\Telas\MenuFuncionario.php');
+                if($dados['email'] == $email && $dados['senha'] == $senha){
+                    header('Location: ..\Telas\MenuProfessor.php');
                 }
             }
             return false;
@@ -42,15 +42,15 @@ class Login {
         }
     }
 
-    public function loginAdinistrador(Conexao $conexao, int $id, string $senha) {
+    public function loginAdministrador(Conexao $conexao,  string $email, string $senha) {
         try {
             $conn = $conexao->conectar(); 
-            $sql  = "select id, tipo, senha from Administrador where id = '$id' and senha = '$senha'";
+            $sql  = "select email, senha from administrador where email = '$email' and senha = '$senha'";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
-                if($dados['id'] == $id && $dados['tipo'] == 1 && $dados['senha'] == $senha){
-                    header('Location: ..\Telas\MenuFuncionario.php');
+                if($dados['email'] == $email && $dados['senha'] == $senha){
+                    header('Location: ..\Telas\MenuAdministrador.php');
                 }
             }
             return false;

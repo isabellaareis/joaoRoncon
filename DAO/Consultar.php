@@ -87,6 +87,52 @@
                 echo $erro;
             }
         }//fim do método
+
+        function consultarTurmaIndividual(Conexao $conexao, string $nome)        
+        {
+            try{
+                $conn = $conexao->conectar();
+                $sql  = "select * from turma where Nome = '$nome'";
+                $result = mysqli_query($conn,$sql);
+                while($dados = mysqli_fetch_Array($result))
+                {
+                    if($dados['Nome'] == $nome){
+                        return  
+                             "<br>Nome: ".$dados['Nome'];
+                             
+                    }
+                }
+                return "Digite um nome válido!";
+            }catch(Exception $erro)
+            {
+                echo $erro;
+            }
+        }//fim do método
+
+        function consultarAvisos(Conexao $conexao,
+        string $dt)        
+        {
+            try{
+                $conn = $conexao->conectar();
+                $sql  = "select * from Aviso where dt = '$dt'";
+                $result = mysqli_query($conn,$sql);
+                while($dados = mysqli_fetch_Array($result))
+                {
+                    if($dados['dt'] == $dt){
+                        return  
+                             "<br>Data: ".$dados['dt']. 
+                             "<br>Título: ".$dados['Titulo'].
+                             "<br>Descrição: ".$dados['Descricao'];
+                             
+                    }
+                }
+                return "Digite uma data válida  válido!";
+            }catch(Exception $erro)
+            {
+                echo $erro;
+            }
+        }//fim do método
+
         
     }//fim da classe
 ?>

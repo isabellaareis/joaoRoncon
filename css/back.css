@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+
 /* Impede rolagem horizontal */
 html, body {
     height: 100%;
@@ -108,16 +109,24 @@ main {
 /*main*/
 
 .container {
-    margin-top: 200px;
-   margin-left: 130px;
+  justify-content: center;
+  margin-top: 200px;
+  margin-left: 160px;
 }
 
 .card1 {
-    height: 300px;
-    width: 400px;
-    border-radius: 20px;
-    background-color: #1A1A1A;
+  height: 300px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #1A1A1A;
+  cursor:pointer;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  text-decoration: none;
 }
+
+
 
 .card2 {
     margin-top: -300px;
@@ -126,6 +135,11 @@ main {
     width: 400px;
     border-radius: 20px;
     background-color: #1A1A1A;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .card3 {
@@ -135,6 +149,11 @@ main {
     width: 400px;
     border-radius: 20px;
     background-color: #1A1A1A;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .card4 {
@@ -143,6 +162,11 @@ main {
     background-color: #1A1A1A;
     width: 1300px;
     border-radius: 20px;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 .card5 {
@@ -151,6 +175,11 @@ main {
     background-color: #1A1A1A;
     width: 1300px;
     border-radius: 20px;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
 }
 
 /*footer*/
@@ -307,3 +336,184 @@ main {
   .footer-bottom a:hover {
     color: rgba(201, 28, 199, 0.8)s;
   }
+
+/*conteudo cards*/
+  .title-1 {
+    margin-left: 40px;
+    margin-top: 50px;
+    color: #ffffff;
+    font-size: 1.8em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+
+.p1 {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #ffffff;
+
+
+}
+
+.btn1 {
+  margin-top: 20px;
+  margin-left: 320px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1:hover {
+  transform: scale(1.1);
+}
+
+.btn1:hover .circle {
+  background-color: #bbb;
+}
+
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+svg {
+  transition: transform 0.3s ease;
+}
+
+.btn1:hover svg{
+  transform: translateX(3px);
+}
+
+
+.p2 {
+  max-width: 1200px;
+  margin-top: 30px;
+  margin-left: 40px;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #ffffff;
+}
+
+.btn2 {
+  margin-top: 30px;
+  margin-left: 1220px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn2:hover {
+  transform: scale(1.1);
+}
+
+.btn2:hover .circle {
+  background-color: #bbb;
+}
+
+
+/* LOGIN */ 
+.form-container {
+  width: 320px;
+  border-radius: 0.75rem;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+
+.title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.input-group label {
+  display: block;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 4px;
+}
+
+.input-group input {
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(55, 65, 81, 1);
+  outline: 0;
+  background-color: rgba(17, 24, 39, 1);
+  padding: 0.75rem 1rem;
+  color: rgba(243, 244, 246, 1);
+}
+
+.input-group input:focus {
+  border-color: rgba(167, 139, 250);
+}
+
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175,1);
+  margin: 8px 0 14px 0;
+}
+
+.forgot a,.signup a {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot a:hover, .signup a:hover {
+  text-decoration: underline rgba(167, 139, 250, 1);
+}
+
+.sign {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  background-color: rgba(167, 139, 250, 1);
+  padding: 0.75rem;
+  text-align: center;
+  color: rgba(17, 24, 39, 1);
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+
+.signup {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(156, 163, 175, 1);
+}

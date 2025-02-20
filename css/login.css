@@ -1,0 +1,201 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+
+* {
+  font-family: inter, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body, html {
+  background-color: black;
+  font-family: inter, sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+
+
+.form-container {
+  width: 350px;
+  border-radius: 12px;
+  background: rgba(94, 5, 96, 0.3);
+  box-shadow: 
+    0 0 12px rgba(173, 10, 176, 0.5),
+    0 0 25px rgba(173, 10, 176, 0.4);
+  border: 1px solid rgba(173, 10, 176, 0.6);
+  padding: 2rem;
+  color: rgba(243, 244, 246, 1);
+  text-align: center;
+  backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 8px rgba(173, 10, 176, 0.8);
+}
+
+.form {
+  margin-top: 1.5rem;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  color: rgba(243, 244, 246, 1);
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(173, 10, 176, 0.6);
+  outline: none;
+  background: rgba(94, 5, 96, 0.28);
+  padding: 12px;
+  font-size: 1rem;
+  color: rgba(243, 244, 246, 1);
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color:rgba(173, 10, 176, 0.6);
+  box-shadow:  0 0 8px rgba(173, 10, 176, 0.5),
+  0 0 20px rgba(173, 10, 176, 0.4);
+}
+
+.forgot {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.8rem;
+  color: rgba(156, 163, 175, 1);
+  margin-bottom: 15px;
+}
+
+.forgot a, .signup a {
+  color: rgba(243, 244, 246, 1);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.forgot a:hover, .signup a:hover {
+  text-decoration: underline;
+  color: rgba(167, 139, 250, 1);
+}
+
+.sign {
+  width: 100%;
+  background: linear-gradient(90deg, #a515af, #c716d4);
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(173, 10, 176, 0.6);
+}
+
+.sign:hover {
+  background: linear-gradient(90deg, #c716d4, #e91eff);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(173, 10, 176, 0.8);
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: rgba(156, 163, 175, 1);
+}
+
+.input-row {
+  display: flex;
+  gap: 10px; /* Espaço entre os inputs */
+}
+
+.input-row .input-group {
+  flex: 1; /* Faz os inputs ocuparem o mesmo espaço */
+}
+
+.input-group select, .input-group input {
+  width: 100%; /* Faz os inputs e selects ocuparem todo o espaço */
+}
+
+.input-group select {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(173, 10, 176, 0.6);
+  outline: none;
+  background: rgba(94, 5, 96, 0.28);
+  padding: 12px;
+  font-size: 1rem;
+  color: rgba(243, 244, 246, 1);
+  transition: all 0.3s ease;
+  appearance: none; /* Remove o estilo padrão do select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+
+
+.input-group select:focus {
+  border-color: rgba(173, 10, 176, 0.6);
+  box-shadow: 0 0 8px rgba(173, 10, 176, 0.5),
+              0 0 20px rgba(173, 10, 176, 0.4);
+}
+
+
+.back-button {
+  position: fixed;
+  top: 20px; /* Distância do topo */
+  left: 20px; /* Distância da esquerda */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: linear-gradient(90deg, #a515af, #c716d4); /* Cor gradiente */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(173, 10, 176, 0.5);
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(173, 10, 176, 0.8);
+}
+
+.back-button svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.back-button span {
+  display: none; /* Ocultar o texto para manter o botão redondo */
+}
+

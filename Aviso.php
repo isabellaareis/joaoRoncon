@@ -2,14 +2,18 @@
 
 namespace PHP\JoaoRoncon;
 
-class Turma{
-    protected string $nome;
+class Aviso{
+    protected string $titulo;
+    protected string $descricao;
+    protected date $dt;
 
 
-    public function __construct(string $nome)
+    public function __construct(string $titulo,string $descricao,date $dt)
     {
         //Instanciar 
-        $this->nome  = $nome;
+        $this->titulo  = $titulo;
+        $this->descricao  = $descricao;
+        $this->dt  = $dt;
     }//fim do construtor
 
     public function __get(string $variavel):mixed
@@ -25,7 +29,9 @@ class Turma{
     public function imprimir():string 
     {
         return 
-                "<br>Nome: ".$this->nome;
+                "<br>Nome: ".$this->titulo.
+                "<br>Nome: ".$this->descricao.
+                "<br>Nome: ".$this->dt;
                
     }//fim do método
 }//fim da classe Pessoa

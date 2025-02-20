@@ -13,29 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">  
-    <title>Consultar Professor</title>
+    <title>Consultar Turma</title>
     </head>
     <body>
     <a href="MenuAdministradorProfessor.php"> <button>Voltar</button></a> 
     <form method="POST">
     <form method="POST">
-    <label>Informe um CPF: </label>
-    <input type = "text" name="tCpf"/>
+    <label>Informe um nome: </label>
+    <input type = "text" name="tNdt"/>
     <button type="submit">Consultar
     <?php
                     $conexao = new Conexao();
-                    if(isset($_POST['tCpf'])){
-                        $cpf = $_POST['tCpf'];
+                    if(isset($_POST['tNdt'])){
+                        $nome = $_POST['tNdt'];
                     $consultar = new Consultar();
                     }  
                 ?>
     </button>
     </form>
     <?php
-            if(isset($_POST['tCpf'])){
-            echo $consultar->consultarProfessorIndividual($conexao,$cpf);
+            if(isset($_POST['tNdt'])){
+            echo $consultar->consultarTurmaIndividual($conexao,$nome);
             }else{
-                echo "Preencha o campo CPF";
+                echo "Preencha o campo nome";
             }
         ?>
     </body>

@@ -26,10 +26,51 @@
 
     <main>
         <div class="container">
-                <div class="card1"></div>
-                <div class="card2"></div>
-                <div class="card3"></div>
-                <div class="card4"></div>
+            <div class="card1">
+                    <h2 class="title-1">Consultar Professor</h2>
+                    <p class="p1">Precisa verificar detalhes sobre um professor? Consulte agora o perfil completo e todas as informações relevantes.</p>
+                    <a href="ConsultarProfessor.php">
+                        <button class="btn1">
+                            <div class="circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                            </div>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="card2">
+                    <h2 class="title-1">Cadastrar Professor</h2>
+                        <p class="p1">Como administrador, você pode expandir sua equipe de educadores e oferecer mais oportunidades de aprendizado. Cadastre um novo professor agora e amplie.</p>
+                        <a href="CadastrarProfessor.php">
+                            <button class="btn1">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </div>
+                            </button>
+                        </a>
+                </div>
+                <div class="card3">
+                    <h2 class="title-1">Excluir Professor</h2>
+                        <p class="p1">Se necessário, você pode remover rapidamente um professor da plataforma. Exclua um professor agora e mantenha sua equipe sempre atualizada.</p>
+                        <a href="ExcluirProfessor.php">
+                            <button class="btn1">
+                                <div class="circle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                </div>
+                            </button>
+                        </a>
+                </div>
+                <div class="card4">
+                    <h2 class="title-1">Atualizar Professor</h2>
+                            <p class="p2">Manter as informações dos seus professores sempre atualizadas é essencial para uma gestão eficiente e organizada. Atualize agora os dados do professor e garanta que sua plataforma esteja sempre precisa, completa e pronta para atender às necessidades da sua instituição.</p>
+                            <a href="AtualizarProfessor.php">
+                                <button class="btn2">
+                                    <div class="circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                    </div>
+                                </button>
+                            </a>
+                </div>
         </div>
     </main>
       
@@ -40,7 +81,7 @@
     <footer id="footer">
         <div class="footer-content-wrapper">
             <div class="footer-logo">
-                <img src="images/logo.png" alt="Logo João Roncon">
+                <img src="../images/logo.png" alt="Logo João Roncon">
                 <div>
                     <h3 aria-label="João Roncon Arte em Movimento">João Roncon Arte em Movimento</h3>
 
@@ -79,10 +120,10 @@
                 <div>
                     <h3 aria-label="Páginas">Páginas</h3>
                     <ul>
-                        <li><a href="index.html" aria-label="Voltar para a página inicial">HOME</a></li>
-                        <li><a href="sobre.html" aria-label="Saiba mais sobre nossa história">SOBRE</a></li>
-                        <li><a href="eventos.html" aria-label="Confira nossos próximos eventos">EVENTOS</a></li>
-                        <li><a href="galeria.html" aria-label="Veja nossa galeria de fotos">GALERIA</a></li>
+                        <li><a href="MenuAdministrador.php" aria-label="Voltar para a página inicial">ALUNO</a></li>
+                        <li><a href="MenuAdministradorProfessor.php" aria-label="Saiba mais sobre nossa história">PROFESSOR</a></li>
+                        <li><a href="MenuAdministradorAdm.php" aria-label="Confira nossos próximos eventos">ADMINISTRADOR</a></li>
+                       
                     </ul>
                 </div>
             </div>
