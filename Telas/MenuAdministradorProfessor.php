@@ -26,7 +26,7 @@
 
     <main>
         <div class="container">
-            <div class="card1">
+            <div class="card1" id="card1">
                     <h2 class="title-1">Consultar Professor</h2>
                     <p class="p1">Precisa verificar detalhes sobre um professor? Consulte agora o perfil completo e todas as informações relevantes.</p>
                     <a href="ConsultarProfessor.php">
@@ -38,7 +38,7 @@
                     </a>
                 </div>
 
-                <div class="card2">
+                <div class="card1" id="card2">
                     <h2 class="title-1">Cadastrar Professor</h2>
                         <p class="p1">Como administrador, você pode expandir sua equipe de educadores e oferecer mais oportunidades de aprendizado. Cadastre um novo professor agora e amplie.</p>
                         <a href="CadastrarProfessor.php">
@@ -49,7 +49,7 @@
                             </button>
                         </a>
                 </div>
-                <div class="card3">
+                <div class="card1" id="card3">
                     <h2 class="title-1">Excluir Professor</h2>
                         <p class="p1">Se necessário, você pode remover rapidamente um professor da plataforma. Exclua um professor agora e mantenha sua equipe sempre atualizada.</p>
                         <a href="ExcluirProfessor.php">
@@ -60,7 +60,7 @@
                             </button>
                         </a>
                 </div>
-                <div class="card4">
+                <div class="card4" id="card4">
                     <h2 class="title-1">Atualizar Professor</h2>
                             <p class="p2">Manter as informações dos seus professores sempre atualizadas é essencial para uma gestão eficiente e organizada. Atualize agora os dados do professor e garanta que sua plataforma esteja sempre precisa, completa e pronta para atender às necessidades da sua instituição.</p>
                             <a href="AtualizarProfessor.php">

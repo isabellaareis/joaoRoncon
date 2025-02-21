@@ -26,7 +26,7 @@
 
     <main>
         <div class="container">
-            <div class="card1">
+            <div class="card1" id="card1">
                         <h2 class="title-1">Consultar ADM</h2>
                         <p class="p1">Como administrador, é essencial ter acesso às informações de forma rápida e organizada. Acesse agora os dados completos.</p>
                         <a href="ConsultarAdministrador.php">
@@ -38,7 +38,7 @@
                         </a>
                     </div>
 
-                    <div class="card2">
+                    <div class="card1" id="card2">
                         <h2 class="title-1">Cadastrar ADM</h2>
                             <p class="p1">Como Administrador, você pode expandir sua equipe e oferecer mais benefícios e treinamentos. Cadastre seus colaboradores agora e aproveite</p>
                             <a href="CadastrarAdministrador.php">
@@ -49,7 +49,7 @@
                                 </button>
                             </a>
                     </div>
-                    <div class="card3">
+                    <div class="card1" id="card3">
                         <h2 class="title-1">Excluir ADM</h2>
                             <p class="p1">Como administrador, você tem o controle total sobre os dados. Exclua registros desnecessários ou obsoletos de forma simples e segura!</p>
                             <a href="ExcluirAdministrador.php">
@@ -60,7 +60,7 @@
                                 </button>
                             </a>
                     </div>
-                    <div class="card4">
+                    <div class="card4" id="card4">
                         <h2 class="title-1">Atualizar ADM</h2>
                                 <p class="p2">Garanta que suas informações estejam sempre corretas e atualizadas para uma experiência mais eficiente e segura. Atualize seus dados de forma rápida, simples e sem complicações, mantendo sua plataforma sempre otimizada e funcionando perfeitamente.</p>
                                 <a href="Atualizaradministrador.php">

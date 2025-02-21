@@ -32,7 +32,7 @@
         <div class="input-row">
             <div class="input-group">
                 <label for="tCpf">CPF</label>
-                <input type="text" id="tCpf" name="tCpf" placeholder="Insira seu CPF"/>
+                <input type="text" id="tCpf" name="tCpf" placeholder="000.000.000-00"/>
             </div>
             <div class="input-group">
                 <label for="tNome">Nome</label>
@@ -42,8 +42,8 @@
 
         <div class="input-row">
             <div class="input-group">
-                <label for="tNomeSocial">Nome Social</label>
-                <input type="text" id="tNomeSocial" name="tNomeSocial" placeholder="Nome Social"/>
+                <label for="tPronome">Pronome</label>
+                <input type="text" id="tPronome" name="tPronome" placeholder="Ex: Ele/Dele">
             </div>
             <div class="input-group">
                 <label for="tGenero">Gênero</label>
@@ -57,8 +57,8 @@
         </div>
 
         <div class="input-group">
-            <label for="tPronome">Pronome</label>
-            <input type="text" id="tPronome" name="tPronome" placeholder="Ex: Ele/Dele, Ela/Dela">
+            <label for="tNomeSocial">Nome Social</label>
+            <input type="text" id="tNomeSocial" name="tNomeSocial" placeholder="Nome Social"/>
         </div>
 
         <div class="input-group">
@@ -69,7 +69,7 @@
         <div class="input-row">
             <div class="input-group">
                 <label for="tTelefone">Telefone</label>
-                <input type="text" id="tTelefone" name="tTelefone" placeholder="Insira seu telefone">
+                <input type="text" id="tTelefone" name="tTelefone" placeholder="(xx) xxxxx-xxxx">
             </div>
             <div class="input-group">
                 <label for="tDtNascimento">Data de Nascimento</label>
@@ -77,9 +77,15 @@
             </div>
         </div>
 
-        <div class="input-group">
-            <label for="tSenha">Senha</label>
-            <input type="password" id="tSenha" name="tSenha" placeholder="Digite sua senha">
+        <div class="input-row">
+            <div class="input-group">
+                <label for="tSenha">Senha</label>
+                <input type="password" id="tSenha" name="tSenha" placeholder="Digite sua senha">
+            </div>
+            <div class="input-group">
+                <label for="tSenha">Confirmar Senha</label>
+                <input type="password" id="tSenha" name="tSenha" placeholder="Digite sua senha">
+            </div>
         </div>
 
         <button class="sign">Cadastrar

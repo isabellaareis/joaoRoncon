@@ -159,6 +159,10 @@ body, html {
 }
 
 
+.form-container {
+  width: 480px; /* Aumentando a largura */
+  padding: 1.5rem;
+}
 
 .input-group select:focus {
   border-color: rgba(173, 10, 176, 0.6);
