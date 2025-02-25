@@ -43,7 +43,7 @@
             <div class="card2" id="card2">
                 <h2 class="title-1">Liberar Acesso</h2>
                     <p class="p1">Garanta que seus alunos tenham acesso às aulas e materiais necessários. Libere o acesso dos alunos de forma rápida e simples.</p>
-                    <a href="">
+                    <a href="InserirAlunos.php">
                         <button class="btn1">
                             <div class="circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -76,7 +76,7 @@
             <div class="card5" id="card5">
                 <h2 class="title-1">Consultar Turma</h2>
                             <p class="p2">Precisa conferir todos os detalhes de uma sala? Consulte agora as informações completas sobre sua estrutura, capacidade e disponibilidade. Planeje com mais eficiência e otimize sua programação garantindo o melhor uso dos espaços.</p>
-                            <a href="">
+                            <a href="ConsultarTurma.php">
                                 <button class="btn2">
                                     <div class="circle">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -87,7 +87,7 @@
             <div class="card1" id="card6">
                 <h2 class="title-1">Cadastrar Turma</h2>
                 <p class="p1">Facilite a gestão acadêmica e ofereça uma experiência de ensino mais organizada. Cadastre uma nova turma agora!</p>
-                <a href="ConsultarAluno.php">
+                <a href="CadastrarTurma.php">
                     <button class="btn1">
                         <div class="circle">
                             <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -99,7 +99,7 @@
             <div class="card1" id="card7">
                 <h2 class="title-1">Atualizar Turma</h2>
                     <p class="p1">Mantenha suas turmas sempre organizadas e atualizadas para uma melhor gestão acadêmica. Atualize as turmas agora!</p>
-                    <a href="">
+                    <a href="AtualizarTurma.php">
                         <button class="btn1">
                             <div class="circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -110,7 +110,7 @@
             <div class="card1" id="card8">
                 <h2 class="title-1">Excluir Turma</h2>
                     <p class="p1">Mantenha a gestão organizada. Exclua turmas desnecessárias agora!</p>
-                    <a href="ExcluirAluno.php">
+                    <a href="ExcluirTurma.php">
                         <button class="btn1">
                             <div class="circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="22" width="19" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#00000091" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>

@@ -7,18 +7,23 @@ class Login {
     public function loginAluno(Conexao $conexao, string $email, string $senha) {
         try {
             $conn = $conexao->conectar(); 
-            $sql  = "select email,senha from aluno where email = '$email' and senha = '$senha'";
+            $sql  = "select email,senha,turma from aluno where email = '$email' and senha = '$senha' ";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
-                if($dados['email'] == $email && $dados['senha'] == $senha){
+                if($dados['email'] == $email && $dados['senha'] == $senha && $dados['turma'] == 1){
                     header('Location: ..\Telas\MenuAluno.php');
+                }else if($dados['email'] == $email  && $dados['senha'] == $senha && $dados['turma'] == 2){
+                    header('Location: ..\Telas\MenuAluno1.php');
+                }else if ($dados['email'] == $email &&  $dados['senha'] == $senha && $dados['turma'] == 3) {
+                    header('Location: ..\Telas\MenuAluno2.php');
+                  
                 }
             }
             return false;
  
             mysqli_close($conn);
-        } catch (Exception $erro) {
+        } catch (Exception $erro) { 
             echo "Erro: " . $erro->getMessage();
         }
     }
@@ -26,14 +31,18 @@ class Login {
     public function loginProfessor(Conexao $conexao,  string $email, string $senha) {
         try {
             $conn = $conexao->conectar(); 
-            $sql  = "select email,senha from professor where email = '$email' and senha = '$senha'";
+            $sql  = "select email,senha,turma from professor where email = '$email' and senha = '$senha'";
             $result = mysqli_query($conn,$sql);
             while($dados = mysqli_fetch_Array($result))
             {
-                if($dados['email'] == $email && $dados['senha'] == $senha){
+                if($dados['email'] == $email && $dados['senha'] == $senha && $dados['turma'] == 1){
                     header('Location: ..\Telas\MenuProfessor.php');
-                }
+                }else if($dados['email'] == $email  && $dados['senha'] == $senha && $dados['turma'] == 2){
+                    header('Location: ..\Telas\MenuProfessor1.php');
+                }else if ($dados['email'] == $email &&  $dados['senha'] == $senha && $dados['turma'] == 3) {
+                    header('Location: ..\Telas\MenuProfessor2.php');
             }
+        }
             return false;
  
             mysqli_close($conn);

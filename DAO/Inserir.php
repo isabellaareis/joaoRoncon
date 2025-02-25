@@ -116,6 +116,27 @@
             }
         }//fim do método
 
+        function salvarTurmas(Conexao $conexao, array $turmas) {
+            try {
+                $conn = $conexao->conectar(); // Conectar ao banco
+        
+                // Itera sobre as turmas e executa a query para cada aluno
+                foreach ($turmas as $id => $turma) {
+                    $sql = "UPDATE aluno SET turma = '$turma' WHERE id = '$id'";
+                    $result = mysqli_query($conn, $sql);
+        
+                    if (!$result) {
+                        throw new Exception("Erro ao atualizar o aluno ID $id: " . mysqli_error($conn));
+                    }
+                }
+        
+                mysqli_close($conn); // Fechar a conexão
+                return "";
+        
+            } catch (Exception $erro) {
+                return "" . $erro->getMessage();
+            }
+        }
 
 
     }// fim da classe
