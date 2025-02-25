@@ -28,7 +28,7 @@
     </a>
     <div class="form-container">
     <p class="title">Cadastrar</p>
-    <form class="form">
+    <form class="form" method="POST">
         <div class="input-row">
             <div class="input-group">
                 <label for="tCpf">CPF</label>
@@ -89,7 +89,7 @@
         </div>
 
         <button class="sign">Cadastrar
-            <?php
+        <?php
                 $conexao = new Conexao();//conectar o banco
                 if(isset($_POST['tNome'])){
                     $cpf = $_POST['tCpf'];
@@ -107,8 +107,8 @@
             ?>
         </button>
     </form>
-</div>
+    </div>
 
 
-    </body>
+</body>
 </html>
